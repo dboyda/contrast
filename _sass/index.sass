@@ -9,3 +9,18 @@ $light: #ffffff !default
 
 @function reduce ($percent)
   @return rgba(mix($dark, $light), $percent / 100)
+
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.image-container img {
+  max-width: 150px; /* Adjust the size of the image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.text-container {
+  max-width: 600px; /* Optional: limit the width of the text container */
+}
